@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Verdana;\f2\fnil\fcharset0 Monaco;
+\f3\fnil\fcharset0 Consolas;}
+{\colortbl;\red255\green255\blue255;\red237\green237\blue237;\red252\green252\blue252;\red41\green142\blue11;
+\red77\green80\blue81;\red187\green24\blue34;\red251\green0\blue7;\red0\green0\blue194;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 select first character\
+\
+\pard\pardeftab720\sl450\partightenfactor0
+
+\f1\fs30 \cf0 \cb2 \expnd0\expndtw0\kerning0
+article p::first-letter \'96 Selects the first letter of every <p> element\
+\
+Select last paragraph\
+\
+p:last-child\
+\
+\
+p::first-letter \{\
+  border: 1px solid;\
+  font-weight: bold;\
+  color: red;\
+  font-size: 3em;\
+  text-align: middle;\
+\}\
+\
+\pard\pardeftab720\sl576\partightenfactor0
+
+\f2\fs38 \cf0 \cb3 	\cf4 p:first-of-type::first-letter \cf5 \{\cf0 \
+		\cf6 initial-letter\cf5 :\cf0  \cf6 2\cf5 ;\cf0 \
+	\cf5 \}
+\f1\fs30 \cf0 \cb2 \
+\pard\pardeftab720\sl450\partightenfactor0
+\cf0 \
+Select last paragraph and apply \'96 Try?\
+\
+article p:last-child::after \{\
+\pard\pardeftab720\sl448\partightenfactor0
+
+\f3\fs32 \cf7 \cb1 content:\cf8  " Read more >\'94;\
+color: Red;
+\f1\fs30 \cf0 \cb2 \
+\pard\pardeftab720\sl450\partightenfactor0
+\cf0 \}}

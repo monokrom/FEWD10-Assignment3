@@ -13,7 +13,7 @@ Developer @GA in NYC
 
 /* Type */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,800,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700,800,900);
 
 /* Box Model Hack */
 
@@ -105,9 +105,10 @@ ul {
 
 nav li {
     display: inline-block;
-    margin-right: 20px;
-    font-weight: 300;
+    margin-right: 35px;
+    font-weight: 400;
     font-size: 1.2em;
+    letter-spacing: 0.05em;
 }
 
 a {
@@ -116,6 +117,10 @@ a {
 
 header nav a {
     color: #f9e42e;
+}
+
+header nav a:hover {
+    color: #3cb0fd;
 }
 
 header a {
@@ -134,6 +139,8 @@ aside p {
 aside a {
     line-height: 1.5em;
 }
+
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -167,15 +174,19 @@ aside {
     margin: 2.7em 0 0 20px;
 }
 
-
 article {
     margin: 50px 0 50px 0;
     border-style: solid 0;
     border-bottom: 1px solid #606161;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
-article p::after {
+.about {
+    padding-bottom: 20px;
+}
+
+
+/*article p::after {
     content: "Read more >";
     font-weight: 600;
     float: right;
@@ -183,6 +194,8 @@ article p::after {
     padding-top: 50px;
     color: #033048;
 }
+
+*/
 
 nav {
     text-align: right;
@@ -261,22 +274,50 @@ footer {
 
 .categories a {
     font-size: 1.2em;
+    font-weight:300;
+color: #033048}
+
+.categories a:hover {
+    color: #3cb0fd;
+}
+
+.about a {
+    display: block;
+    font-weight: 700;
+}
+
+.about a:hover {
+    color: #3cb0fd;
 }
 
 
-div.about p::after {
+/*
+.about p::after {
     content: "Learn more";
-font-weight:600;
-    line-height: 4em;
-    float:left;
-    clear: both;
-}
+    padding: inherit;
+    display: block;
+    font-weight: 600;
+}*/
 
 .adunit {
     margin: 3em 0;
 }
 
-.readmore {}
+.readmore {
+    font-weight: 600;
+    float: right;
+    /*    clear: both;
+    padding: inherit;*/
+    color: #033048;
+}
+
+.readmore:hover {
+    font-weight: 600;
+    float: right;
+    /*    clear: both;
+    padding: inherit;*/
+    color: #3cb0fd;
+}
 
 .visuallyhidden {
     border: 0;
